@@ -1,2 +1,2 @@
-#this is my first git to github commit
+#this is my first time
 used flexbox documentation project as first commit to github
