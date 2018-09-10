@@ -73,7 +73,7 @@ nav header {
   margin-right: 10px;
 }
 
-nav ul {
+#side-menu {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -173,6 +173,10 @@ img {
   }
   .btn {
     display: none;
+  }
+
+  #side-menu {
+    min-width: 300px;
   }
 }
 
