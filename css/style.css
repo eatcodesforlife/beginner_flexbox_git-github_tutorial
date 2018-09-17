@@ -1,8 +1,7 @@
-
-html, body{
+html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', Arial,sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -15,17 +14,18 @@ header {
 p code, li code {
   display: inline-block;
 }
+
 code {
-  display:block;
+  display: block;
   text-align: left;
   white-space: pre;
   position: relative;
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color:#d1d1d1;
-  padding:0 15px;
-  border-radius:2px;
+  background-color: #d1d1d1;
+  padding: 0 15px;
+  border-radius: 2px;
 }
 
 .container {
@@ -45,7 +45,6 @@ a {
 a:hover {
   color: #d6e3ff;
 }
-
 
 /*side nav */
 nav {
@@ -97,9 +96,9 @@ nav a {
   color: #1c2230;
 }
 
-
 /*main*/
 #container-main {
+  display: flex;
   margin-left: 300px;
   padding: 0 10px;
 }
@@ -110,14 +109,16 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .main-section {
-  padding:20px;
+  padding: 20px;
 }
 
-.main-section header{
+.main-section header {
   padding-top: 100px;
   padding-bottom: -50px;
 }
+
 img {
   max-width: 100%;
 }
@@ -133,6 +134,7 @@ img {
     top: 0;
     width: 100%;
   }
+
   nav header {
     margin-left: 0;
     padding-left: 20px;
@@ -140,7 +142,7 @@ img {
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 850px) {
   #side-menu {
     z-index: 1;
     position: fixed;
@@ -157,7 +159,7 @@ img {
 
   #container-main {
     margin-left: 10px;
-    transition: margin-left .5s;
+    /* transition: margin-left .5s; */
   }
 
   #side-menu .btn {
@@ -167,10 +169,11 @@ img {
   }
 }
 
-@media(min-width: 850px){
+@media(min-width: 850px) {
   .open-slide {
     display: none;
   }
+
   .btn {
     display: none;
   }
@@ -181,15 +184,16 @@ img {
 }
 
 @media only screen and (max-width: 400px) {
-  #main-doc{
-    margin-left:-10px;
+  #main-doc {
+    margin-left: -10px;
   }
-  code{
-    margin-left:-20px;
-    width:100%;
-    padding:15px;
-    padding-left:10px;
-    padding-right:45px;
-    min-width:233px;
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
   }
 }

@@ -1,21 +1,23 @@
 <doctype! html>
-<html>
-<head>
-<title>MDN: FLEXBOX DOCUMENTATION</title>
-<meta charset="utf-8">
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta http-equiv="X-UA-Compatible" content = "ie-edge">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
-<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
- <div class='container'>
-   <div class='sidenav'>
-     <nav id='navbar'>
-       <header id='Flexbox'>
-         <span class='open-slide'>
-           <a href='#' onclick='openSideMenu()'>
+  <html>
+
+  <head>
+    <title>MDN: FLEXBOX DOCUMENTATION</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='sidenav'>
+        <nav id='navbar'>
+          <header id='Flexbox'>
+            <span class='open-slide'>
+           <a href='javascript:void();' onclick='openSideMenu()'>
              <svg width='30' height='30'>
                <path d='M0, 5, 30,5' stroke='#000000'/>
                <path d='M0, 14, 30,14' stroke='#000000'/>
@@ -23,133 +25,148 @@
              </svg>
            </a>
          </span><h3>MDN: FLEXBOX DOCUMENTATION</h3>
-       </header>
-       <ul id='side-menu'><span class='btn'><a href='#' onclick='closeSideMenu()'>&times</a></span>
-         <a href='#Overview' class='nav-link'><li>Overview</li></a>
-         <a href='#Why_flexbox?' class='nav-link'><li>Why Flexbox?</li></a>
-         <a href='#Introducing_a_simple_example' class='nav-link'><li>Introducing a simple example</li></a>
-         <a href='#Specifying_what_elements_to_lay_out_as_flexible_boxes' class='nav-link'><li>Specifying what elements to lay out as flexible boxes</li></a>
-         <a href='#An_aside_on_the_flex_model' class='nav-link'><li>An aside on the flex model</li></a>
-         <a href='#Columns_or_rows?' class='nav-link'><li>Columns or rows?</li></a>
-         <a href='#Wrapping' class='nav-link'><li>Wrapping</li></a>
-         <a href='#flex-flow_shorthand' class='nav-link'><li>flex-flow shorthand</li></a>
-         <a href='#Flexible_sizing_of_flex_items' class='nav-link'><li>Flexible sizing of flex items</li></a>
-         <a href='#flex:_shorthand_versus_longhand' class='nav-link'><li>flex: shorthand versus longhand</li></a>
-         <a href='#Horizontal_and_vertical_alignment' class='nav-link'><li>Horizontal and vertical alignment</li></a>
-         <a href='#Ordering_flex_items' class='nav-link'><li>Ordering flex items</li></a>
-         <a href='#Nested_flex_boxes' class='nav-link'><li>Nested flex boxes</li></a>
-         <a href='#Cross_browser_compatibility' class='nav-link'><li>Cross browser compatibility</li></a>
-         <a href='#Summary' class='nav-link'><li>Summary</li></a>
-         <a href='#Referrence' class='nav-link'><li>Referrence</li></a>
-       </ul>
-     </nav>
-  </div><!--sidenav div-->
-  <div></div>
-  <div id='container-main'>
-    <main id='main-doc'>
-        <section class='main-section' id='Overview'>
-          <header>Overview</header>
-              <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
-              <span class='sidenote'><h3>Prerequisites:</h3>
+          </header>
+          <ul id='side-menu'>
+            <a href='#Overview' class='nav-link' onclick='closeSideMenu()'><li>Overview</li></a>
+            <a href='#Why_flexbox?' class='nav-link' onclick='closeSideMenu()'><li>Why Flexbox?</li></a>
+            <a href='#Introducing_a_simple_example' class='nav-link' onclick='closeSideMenu()'><li>Introducing a simple example</li></a>
+            <a href='#Specifying_what_elements_to_lay_out_as_flexible_boxes' class='nav-link' onclick='closeSideMenu()'><li>Specifying what elements to lay out as flexible boxes</li></a>
+            <a href='#An_aside_on_the_flex_model' class='nav-link' onclick='closeSideMenu()'><li>An aside on the flex model</li></a>
+            <a href='#Columns_or_rows?' class='nav-link' onclick='closeSideMenu()'><li>Columns or rows?</li></a>
+            <a href='#Wrapping' class='nav-link' onclick='closeSideMenu()'><li>Wrapping</li></a>
+            <a href='#flex-flow_shorthand' class='nav-link' onclick='closeSideMenu()'><li>flex-flow shorthand</li></a>
+            <a href='#Flexible_sizing_of_flex_items' class='nav-link' onclick='closeSideMenu()'><li>Flexible sizing of flex items</li></a>
+            <a href='#flex:_shorthand_versus_longhand' class='nav-link' onclick='closeSideMenu()'><li>flex: shorthand versus longhand</li></a>
+            <a href='#Horizontal_and_vertical_alignment' class='nav-link' onclick='closeSideMenu()'><li>Horizontal and vertical alignment</li></a>
+            <a href='#Ordering_flex_items' class='nav-link'><li>Ordering flex items</li></a>
+            <a href='#Nested_flex_boxes' class='nav-link' onclick='closeSideMenu()'><li>Nested flex boxes</li></a>
+            <a href='#Cross_browser_compatibility' class='nav-link' onclick='closeSideMenu()'><li>Cross browser compatibility</li></a>
+            <a href='#Summary' class='nav-link' onclick='closeSideMenu()'><li>Summary</li></a>
+            <a href='#Referrence' class='nav-link' onclick='closeSideMenu()'><li>Referrence</li></a>
+          </ul>
+        </nav>
+      </div>
+      <!--close sidenav div-->
+      <div></div>
+      <div id='container-main'>
+        <main id='main-doc' onclick='closeSideMenu()'>
+          <section class='main-section' id='Overview'>
+            <header>Overview</header>
+            <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
+            <span class='sidenote'><h3>Prerequisites:</h3>
                 <ul>
                   <li>HTML basics (<a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'>study Introduction to HTML</a>)</li>
                   <li>and an idea of how CSS works (<a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS'>study Introduction to CSS.</a>)</li>
                 </ul>
               </span>
-              <span><h3>Objective:</h3>
+            <span><h3>Objective:</h3>
                 <ul>
                   <li>To learn how to use the Flexbox layout system to create web layouts.</li>
                 </ul>
               </span>
-        </section>
-        <section class='main-section' id='Why_flexbox?'>
-          <header>Why Flexbox?</header>
-              <p>For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were things like floats and positioning. These are fine and they work, but in some ways they are also rather limiting and frustrating.</p>
-              <p>The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:</p>
-              <ul>
-                <li>Vertically centering a block of content inside its parent.</li>
-                <li>Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available.</li>
-                <li>Making all columns in a multiple column layout adopt the same height even if they contain a different amount of content.</li>
-              </ul>
-              <p>As you'll see in subsequent sections, flexbox makes a lot of layout tasks much easier. Let's dig in!</p>
-        </section>
-        <section class='main-section' id='Introducing_a_simple_example'>
+          </section>
+          <section class='main-section' id='Why_flexbox?'>
+            <header>Why Flexbox?</header>
+            <p>For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were things like floats and positioning. These are fine and they work, but in some ways they are also rather limiting and
+              frustrating.</p>
+            <p>The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:</p>
+            <ul>
+              <li>Vertically centering a block of content inside its parent.</li>
+              <li>Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available.</li>
+              <li>Making all columns in a multiple column layout adopt the same height even if they contain a different amount of content.</li>
+            </ul>
+            <p>As you'll see in subsequent sections, flexbox makes a lot of layout tasks much easier. Let's dig in!</p>
+          </section>
+          <section class='main-section' id='Introducing_a_simple_example'>
             <header class='section-header'>Introducing a simple example</header>
-              <p>In this article we are going to get you to work through a series of exercises to help you understand how flexbox works. To get started, you should make a local copy of the first starter file — <span><a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox0.html'><i class='fa fa-external-link'></i>flexbox0.html</a></span> from our github repo — load it in a modern browser (like Firefox or Chrome), and have a look at the code in your code editor. You can see <span><a href='https://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox0.html'><i class='fa fa-external-link'></i>it live here</a></span> also.</p>
+            <p>In this article we are going to get you to work through a series of exercises to help you understand how flexbox works. To get started, you should make a local copy of the first starter file — <span><a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox0.html'><i class='fa fa-external-link'></i>flexbox0.html</a></span>
+              from our github repo — load it in a modern browser (like Firefox or Chrome), and have a look at the code in your code editor. You can see <span><a href='https://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox0.html'><i class='fa fa-external-link'></i>it live here</a></span>
+              also.</p>
 
-              <p>You'll see that we have a &lt;header&gt; element with a top level heading inside it, and a &lt;section&gt; element containing three &lt;article&gt;s. We are going to use these to create a fairly standard three column layout.</p>
-              <img src='https://mdn.mozillademos.org/files/13406/flexbox-example1.png'>
-        </section>
-        <section class='main-section' id='Specifying_what_elements_to_lay_out_as_flexible_boxes'>
-          <header class='section-header'>Specifying what elements to lay out as flexible boxes</header>
-                <p>To start with, we need to select which elements are to be laid out as flexible boxes. To do this, we set a special value of <span class='elements'><a>display</a></span> on the parent element of the elements you want to affect. In this case we want to lay out the <span class='elements'>&lt;article&gt;</span> elements, so we set this on the &lt;section&gt; (which becomes a flex container):</p>
+            <p>You'll see that we have a &lt;header&gt; element with a top level heading inside it, and a &lt;section&gt; element containing three &lt;article&gt;s. We are going to use these to create a fairly standard three column layout.</p>
+            <img src='https://mdn.mozillademos.org/files/13406/flexbox-example1.png'>
+            </section>
+            <section class='main-section' id='Specifying_what_elements_to_lay_out_as_flexible_boxes'>
+              <header class='section-header'>Specifying what elements to lay out as flexible boxes</header>
+              <p>To start with, we need to select which elements are to be laid out as flexible boxes. To do this, we set a special value of <span class='elements'><a>display</a></span> on the parent element of the elements you want to affect. In
+                this case we want to lay out the <span class='elements'>&lt;article&gt;</span> elements, so we set this on the &lt;section&gt; (which becomes a flex container):</p>
               <code>
                 section {
                   display: flex;
                 }
               </code>
-              <p>So, this single declaration gives us everything we need — incredible, right? We have our multiple column layout with equal sized columns, and the columns are all the same height. This is because the default values given to flex items (the children of the flex container) are set up to solve common problems such as this. More on those later.</p>
+              <p>So, this single declaration gives us everything we need — incredible, right? We have our multiple column layout with equal sized columns, and the columns are all the same height. This is because the default values given to flex
+                items (the children of the flex container) are set up to solve common problems such as this. More on those later.</p>
               <span class='sidenote'><i class='fa fa-sticky-note-o'></i><strong>Note:</strong> You can also set a display value of inline-flex if you wish to lay out inline items as flexible boxes.</span>
-        </section>
-        <section class='main-section' id='An_aside_on_the_flex_model'>
-            <header class='section-header'>An aside on the flex model</header>
+            </section>
+            <section class='main-section' id='An_aside_on_the_flex_model'>
+              <header class='section-header'>An aside on the flex model</header>
               <p>When elements are laid out as flexible boxes, they are laid out along two axes:</p>
               <img src='https://mdn.mozillademos.org/files/3739/flex_terms.png'>
               <ul>
-                <li>The <strong>main axis</strong> is the axis running in the direction the flex items are being laid out in (e.g. as rows across the page, or columns down the page.) The start and end of this axis are called the <strong>main start</strong> and <strong>main end</strong>.</li>
+                <li>The <strong>main axis</strong> is the axis running in the direction the flex items are being laid out in (e.g. as rows across the page, or columns down the page.) The start and end of this axis are called the <strong>main start</strong>
+                  and <strong>main end</strong>.</li>
                 <li>The <strong>cross axis</strong> is the axis running perpendicular to the direction the flex items are being laid out in. The start and end of this axis are called the <strong>cross start</strong> and <strong>cross end.</strong></li>
                 <li>The parent element that has <code>display: flex</code> set on it (the &lt;section&gt; in our example) is called the <strong>flex container.</strong></li>
                 <li>The items being laid out as flexible boxes inside the flex container are called <strong>flex items</strong> (the &lt;article&gt; elements in our example).</li>
               </ul>
               <p>Bear this terminology in mind as you go through subsequent sections. You can always refer back to it if you get confused about any of the terms being used.</p>
-        </section>
-        <section class='main-section' id='Columns_or_rows?'>
-            <header class='section-header'>Columns or rows?</header>
-              <p>Flexbox provides a property called flex-direction that specifies what direction the main axis runs in (what direction the flexbox children are laid out in) — by default this is set to row, which causes them to be laid out in a row in the direction your browser's default language works in (left to right, in the case of an English browser).</p>
+            </section>
+            <section class='main-section' id='Columns_or_rows?'>
+              <header class='section-header'>Columns or rows?</header>
+              <p>Flexbox provides a property called flex-direction that specifies what direction the main axis runs in (what direction the flexbox children are laid out in) — by default this is set to row, which causes them to be laid out in a row
+                in the direction your browser's default language works in (left to right, in the case of an English browser).</p>
               <p>Try adding the following declaration to your section rule:</p>
               <code>flex-direction: column;</code>
 
               <p>You'll see that this puts the items back in a column layout, much like they were before we added any CSS. Before you move on, delete this declaration from your example.</p>
               <span class='sidenote'><i class='fa fa-sticky-note-o      '></i><strong>Note:</strong> You can also lay out flex items in a reverse direction using the <code>row-reverse</code> and <code>column-reverse</code> values. Experiment with these values too!</span>
-        </section>
-        <section class='main-section' id='Wrapping'>
-            <header section='section-header'>Wrapping</header>
-              <p>One issue that arises when you have a fixed amount of width or height in your layout is that eventually your flexbox children will overflow their container, breaking the layout. Have a look at our <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox-wrap0.html'><i class='fa fa-external-link'></i>flexbox-wrap0.html</a> example, and try <a href='http://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox-wrap0.html'><i class='fa fa-external-link'></i>viewing it live</a> (take a local copy of this file now if you want to follow along with this example):</p>
+            </section>
+            <section class='main-section' id='Wrapping'>
+              <header section='section-header'>Wrapping</header>
+              <p>One issue that arises when you have a fixed amount of width or height in your layout is that eventually your flexbox children will overflow their container, breaking the layout. Have a look at our <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox-wrap0.html'><i class='fa fa-external-link'></i>flexbox-wrap0.html</a>
+                example, and try <a href='http://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox-wrap0.html'><i class='fa fa-external-link'></i>viewing it live</a> (take a local copy of this file now if you want to follow along with this
+                example):</p>
               <img src='https://mdn.mozillademos.org/files/13410/flexbox-example3.png'>
               <p>Here we see that the children are indeed breaking out of their container. One way in which you can fix this is to add the following declaration to your section rule:</p>
               <code>flex-wrap: wrap;</code>
               <p>Try this now; you'll see that the layout looks much better with this included:</p>
               <img src='https://mdn.mozillademos.org/files/13412/flexbox-example4.png'>
-              <p>We now have multiple rows — as many flexbox children are fitted onto each row as makes sense, and any overflow is moved down to the next line. The <code>flex: 200px</code> declaration set on the articles means that each will be at least 200px wide; we'll discuss this property in more detail later on. You might also notice that the last few children on the last row are each made wider so that the entire row is still filled.</p>
-              <p>But there's more we can do here. First of all, try changing your <code>flex-direction property</code> value to <code>row-reverse</code> — now you'll see that you still have your multiple row layout, but it starts from the opposite corner of the browser window and flows in reverse.</p>
-        </section>
-        <section class='main-section' id='flex-flow_shorthand'>
-          <header class='section-header'>flex-flow shorthand</header>
-            <p>At this point it is worth noting that a shorthand exists for flex-direction and <code>flex-wrap</code> — <code>flex-flow</code>. So for example, you can replace:</p>
+              <p>We now have multiple rows — as many flexbox children are fitted onto each row as makes sense, and any overflow is moved down to the next line. The <code>flex: 200px</code> declaration set on the articles means that each will be at
+                least 200px wide; we'll discuss this property in more detail later on. You might also notice that the last few children on the last row are each made wider so that the entire row is still filled.</p>
+              <p>But there's more we can do here. First of all, try changing your <code>flex-direction property</code> value to <code>row-reverse</code> — now you'll see that you still have your multiple row layout, but it starts from the opposite
+                corner of the browser window and flows in reverse.</p>
+            </section>
+            <section class='main-section' id='flex-flow_shorthand'>
+              <header class='section-header'>flex-flow shorthand</header>
+              <p>At this point it is worth noting that a shorthand exists for flex-direction and <code>flex-wrap</code> — <code>flex-flow</code>. So for example, you can replace:</p>
               <code>
                 flex-direction: row;
                 flex-wrap: wrap;
               </code>
-           <p>with</p>
+              <p>with</p>
               <code>flex-flow: row-wrap;</code>
-        </section>
-        <section class='main-section' id='Flexible_sizing_of_flex_items'>
-            <header class='section-header'>Flexible sizing of flex items</header>
-              <p>Let's now return to our first example, and look at how we can control what proportion of space flex items take up. Fire up your local copy of flexbox0.html, or take a copy of <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox0.html'><i class='fa fa-external-link'></i>flexbox1.html</a> as a new starting point (<a href='http://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox1.html'><i class='fa fa-external-link'></i>see it live</a>).</p>
+            </section>
+            <section class='main-section' id='Flexible_sizing_of_flex_items'>
+              <header class='section-header'>Flexible sizing of flex items</header>
+              <p>Let's now return to our first example, and look at how we can control what proportion of space flex items take up. Fire up your local copy of flexbox0.html, or take a copy of <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox0.html'><i class='fa fa-external-link'></i>flexbox1.html</a>
+                as a new starting point (<a href='http://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox1.html'><i class='fa fa-external-link'></i>see it live</a>).</p>
               <p>First, add the following rule to the bottom of your CSS:</p>
               <code class='language-css'>
                 article {
                   flex: 1;
                 }
               </code>
-              <p>This is a unitless proportion value that dictates how much of the available space along the main axis each flex item will take up. In this case, we are giving each &lt;article&gt; element a value of 1, which means they will all take up an equal amount of the spare space left after things like padding and margin have been set. It is a proportion, meaning that giving each flex item a value of 400000 would have exactly the same effect.</p>
+              <p>This is a unitless proportion value that dictates how much of the available space along the main axis each flex item will take up. In this case, we are giving each &lt;article&gt; element a value of 1, which means they will all take
+                up an equal amount of the spare space left after things like padding and margin have been set. It is a proportion, meaning that giving each flex item a value of 400000 would have exactly the same effect.</p>
               <p>Now add the following rule below the previous one:</p>
               <code class='language-css'>
                 article:nth-of-type(3){
                   flex:2;
                 }
               </code>
-              <p>Now when you refresh, you'll see that the third &lt;article&gt; takes up twice as much of the available width as the other two — there are now four proportion units available in total. The first two flex items have one each so they take 1/4 of the available space each. The third one has two units, so it takes up 2/4 of the available space (or 1/2).</p>
+              <p>Now when you refresh, you'll see that the third &lt;article&gt; takes up twice as much of the available width as the other two — there are now four proportion units available in total. The first two flex items have one each so they
+                take 1/4 of the available space each. The third one has two units, so it takes up 2/4 of the available space (or 1/2).</p>
               <p>You can also specify a minimum size value inside the flex value. Try updating your existing article rules like so:</p>
               <code class='language-css'>
                 article {
@@ -160,23 +177,27 @@
                   flex: 2 200px;
                 }
               </code>
-              <p>This basically states "Each flex item will first be given 200px of the available space. After that, the rest of the available space will be shared out according to the proportion units." Try refreshing and you'll see a difference in how the space is shared out.</p>
+              <p>This basically states "Each flex item will first be given 200px of the available space. After that, the rest of the available space will be shared out according to the proportion units." Try refreshing and you'll see a difference in
+                how the space is shared out.</p>
               <img src='https://mdn.mozillademos.org/files/13406/flexbox-example1.png'>
               <p>The real value of flexbox can be seen in its flexibility/responsiveness — if you resize the browser window, or add another &lt;article&gt; element, the layout continues to work just fine.</p>
-        </section>
-        <section class='main-section' id='flex:_shorthand_versus_longhand'>
-            <header class='section-header'>flex: shorthand versus longhand</header>
+            </section>
+            <section class='main-section' id='flex:_shorthand_versus_longhand'>
+              <header class='section-header'>flex: shorthand versus longhand</header>
               <p><code>flex</code> is a shorthand property that can specify up to three different values:</p>
               <ul>
                 <li>The unitless proportion value we discussed above. This can be specified individually using the <code>flex-grow</code> longhand property.</li>
-                <li>A second unitless proportion value — <code>flex-shrink</code> — that comes into play when the flex items are overflowing their container. This specifies how much of the overflowing amount is taken away from each flex item's size, to stop them overflowing their container. This is quite an advanced flexbox feature, and we won't be covering it any further in this article.</li>
+                <li>A second unitless proportion value — <code>flex-shrink</code> — that comes into play when the flex items are overflowing their container. This specifies how much of the overflowing amount is taken away from each flex item's size,
+                  to stop them overflowing their container. This is quite an advanced flexbox feature, and we won't be covering it any further in this article.</li>
                 <li>The minimum size value we discussed above. This can be specified individually using the <code>flex-basis</code> longhand value.</li>
               </ul>
               <p>We'd advise against using the longhand flex properties unless you really have to (for example, to override something previously set). They lead to a lot of extra code being written, and they can be somewhat confusing.</p>
-        </section>
-        <section class='main-section' id='Horizontal_and_vertical_alignment'>
-            <header class='section-header'>Horizontal and vertical alignment</header>
-              <p>You can also use flexbox features to align flex items along the main or cross axis. Let's explore this by looking at a new example — <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flex-align0.html'><i class='fa fa-external-link'></i>flex-align0.html</a> (<a href='https://mdn.github.io/learning-area/css/css-layout/flexbox/flex-align0.html'><i class='fa fa-external-link'></i>see it live also</a>) — which we are going to turn into a neat, flexible button/toolbar. At the moment you'll see a horizontal menu bar, with some buttons jammed into the top left hand corner.</p>
+            </section>
+            <section class='main-section' id='Horizontal_and_vertical_alignment'>
+              <header class='section-header'>Horizontal and vertical alignment</header>
+              <p>You can also use flexbox features to align flex items along the main or cross axis. Let's explore this by looking at a new example — <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flex-align0.html'><i class='fa fa-external-link'></i>flex-align0.html</a>
+                (<a href='https://mdn.github.io/learning-area/css/css-layout/flexbox/flex-align0.html'><i class='fa fa-external-link'></i>see it live also</a>) — which we are going to turn into a neat, flexible button/toolbar. At the moment you'll
+                see a horizontal menu bar, with some buttons jammed into the top left hand corner.</p>
               <img src='https://mdn.mozillademos.org/files/13414/flexbox-example5.png'>
               <p>First, take a local copy of this example.</p>
 
@@ -194,7 +215,8 @@
 
               <p><a>align-items</a> controls where the flex items sit on the cross axis.</p>
               <ul>
-                <li>By default, the value is <code>stretch</code>, which stretches all flex items to fill the parent in the direction of the cross axis. If the parent hasn't got a fixed width in the cross axis direction, then all flex items will become as long as the longest flex items. This is how our first example got equal height columns by default.</li>
+                <li>By default, the value is <code>stretch</code>, which stretches all flex items to fill the parent in the direction of the cross axis. If the parent hasn't got a fixed width in the cross axis direction, then all flex items will
+                  become as long as the longest flex items. This is how our first example got equal height columns by default.</li>
                 <li>The <code>center</code> value that we used in our above code causes the items to maintain their intrinsic dimensions, but be centered along the cross axis. This is why our current example's buttons are centered vertically.</li>
                 <li>You can also have values like <code>flex-start</code> and <code>flex-end</code>, which will align all items at the start and end of the cross axis respectively. See <code>align-items</code> for the full details.</li>
               </ul>
@@ -216,9 +238,9 @@
                 <li>There is another value, <code>space-between</code>, which is very similar to <code>space-around</code> except that it doesn't leave any space at either end.</li>
               </ul>
               <p>We'd like to encourage you to play with these values to see how they work before you continue.</p>
-        </section>
-        <section class='main-section' id='Ordering_flex_items'>
-            <header class='section-header'>Ordering flex items</header>
+            </section>
+            <section class='main-section' id='Ordering_flex_items'>
+              <header class='section-header'>Ordering flex items</header>
               <p>Flexbox also has a feature for changing the layout order of flex items, without affecting the source order. This is another thing that is impossible to do with traditional layout methods.</p>
 
               <p>The code for this is simple: try adding the following CSS to your button bar example code:</p>
@@ -241,10 +263,11 @@
                   order: -1;
                 }
               </code>
-        </section>
-        <section class='main-section' id='Nested_flex_boxes'>
-            <header class='section-header'>Nested flex boxes</header>
-              <p>It is possible to create some pretty complex layouts with flexbox. It is perfectly ok to set a flex item to also be a flex container, so that its children are also laid out like flexible boxes. Have a look at <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/complex-flexbox.html'><i class='fa fa-external-link'></i>complex-flexbox.html</a> (<a href='http://mdn.github.io/learning-area/css/css-layout/flexbox/complex-flexbox.html'><i class='fa fa-external-link'></i>see it live also</a>).</p>
+            </section>
+            <section class='main-section' id='Nested_flex_boxes'>
+              <header class='section-header'>Nested flex boxes</header>
+              <p>It is possible to create some pretty complex layouts with flexbox. It is perfectly ok to set a flex item to also be a flex container, so that its children are also laid out like flexible boxes. Have a look at <a href='https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/complex-flexbox.html'><i class='fa fa-external-link'></i>complex-flexbox.html</a>
+                (<a href='http://mdn.github.io/learning-area/css/css-layout/flexbox/complex-flexbox.html'><i class='fa fa-external-link'></i>see it live also</a>).</p>
 
               <img src='https://mdn.mozillademos.org/files/13418/flexbox-example7.png'>
 
@@ -267,7 +290,8 @@
                   display: flex;
                 }
               </code>
-              <p>Next, we set some flex values on the &lt;article&gt;s themselves. Take special note of the 2nd rule here — we are setting the third &lt;article&gt; to have its children laid out like flex items too, but this time we are laying them out like a column.</p>
+              <p>Next, we set some flex values on the &lt;article&gt;s themselves. Take special note of the 2nd rule here — we are setting the third &lt;article&gt; to have its children laid out like flex items too, but this time we are laying them
+                out like a column.</p>
 
               <code class='language-css'>
                 article { flex: 1 200px;
@@ -280,7 +304,8 @@
                 }
               </code>
 
-              <p>Next, we select the first &lt;div&gt;. We first use flex:1 100px; to effectively give it a minimum height of 100px, then we set its children (the &lt;button&gt;elements) to also be laid out like flex items. Here we lay them out in a wrapping row, and align them in the center of the available space like we did in the individual button example we saw earlier.</p>
+              <p>Next, we select the first &lt;div&gt;. We first use flex:1 100px; to effectively give it a minimum height of 100px, then we set its children (the &lt;button&gt;elements) to also be laid out like flex items. Here we lay them out in a
+                wrapping row, and align them in the center of the available space like we did in the individual button example we saw earlier.</p>
 
               <code>
                 article:nth-of-type(3) div:first-child {
@@ -292,7 +317,8 @@
                 }
               </code>
 
-              <p>Finally, we set some sizing on the button, but more interestingly we give it a flex value of 1. This has a very interesting effect, which you'll see if you try resizing your browser window width. The buttons will take up as much space as they can and sit as many on the same line as they can, but when they can no longer fit comfortably on the same line, they'll drop down to create new lines.</p>
+              <p>Finally, we set some sizing on the button, but more interestingly we give it a flex value of 1. This has a very interesting effect, which you'll see if you try resizing your browser window width. The buttons will take up as much
+                space as they can and sit as many on the same line as they can, but when they can no longer fit comfortably on the same line, they'll drop down to create new lines.</p>
 
               <code>
                 button {
@@ -302,30 +328,35 @@
                   line-height: 1.5;
                 }
               </code>
-        </section>
-        <section class='main-section' id='Cross_browser_compatibility'>
-            <header class='section-header'>Cross browser compatibility</header>
-              <p>Flexbox support is available in most new browsers — Firefox, Chrome, Opera, Microsoft Edge and IE 11, newer versions of Android/iOS, etc. However you should be aware that there are still older browsers in use that don't support Flexbox (or do, but support a really old, out-of-date version of it.)</p>
+            </section>
+            <section class='main-section' id='Cross_browser_compatibility'>
+              <header class='section-header'>Cross browser compatibility</header>
+              <p>Flexbox support is available in most new browsers — Firefox, Chrome, Opera, Microsoft Edge and IE 11, newer versions of Android/iOS, etc. However you should be aware that there are still older browsers in use that don't support
+                Flexbox (or do, but support a really old, out-of-date version of it.)</p>
 
-              <p>While you are just learning and experimenting, this doesn't matter too much; however if you are considering using flexbox in a real website you need to do testing and make sure that your user experience is still acceptable in as many browsers as possible.</p>
+              <p>While you are just learning and experimenting, this doesn't matter too much; however if you are considering using flexbox in a real website you need to do testing and make sure that your user experience is still acceptable in as
+                many browsers as possible.</p>
 
-              <p>Flexbox is a bit trickier than some CSS features. For example, if a browser is missing a CSS drop shadow, then the site will likely still be usable. Not supporting flexbox features however will probably break a layout completely, making it unusable.</p>
+              <p>Flexbox is a bit trickier than some CSS features. For example, if a browser is missing a CSS drop shadow, then the site will likely still be usable. Not supporting flexbox features however will probably break a layout completely,
+                making it unusable.</p>
 
               <p>We discuss strategies for overcoming cross browser support issues in our <a href='https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing'>Cross browser testing</a> module.</p>
-        </section>
-        <section class='main-section' id='Summary'>
-          <header class='section-header'>Summary</header>
-            <p>That concludes our tour of the basics of flexbox. We hope you had fun, and will have a good play around with it as you travel forward with your learning. Next we'll have a look at another important aspect of CSS layouts — CSS Grids.</p>
-        </section>
-        <section class='main-section' id='Referrence' >
-          <header section-header>Referrence</header>
-            <p>All information found in this page are from Mozilla Develper Network's Documentation page. You can find the referrence <a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Horizontal_and_vertical_alignment#Ordering_flex_items'>here.</a></p>
-       </section>
-     </main>
-   </div><!--contianer-main div-->
-  </div>
- </div>
- <!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script> -->
- <script src='script.js'></script>
-</body>
-</html>
+            </section>
+            <section class='main-section' id='Summary'>
+              <header class='section-header'>Summary</header>
+              <p>That concludes our tour of the basics of flexbox. We hope you had fun, and will have a good play around with it as you travel forward with your learning. Next we'll have a look at another important aspect of CSS layouts — CSS Grids.</p>
+            </section>
+            <section class='main-section' id='Referrence'>
+              <header section-header>Referrence</header>
+              <p>All information found in this page are from Mozilla Develper Network's Documentation page. You can find the referrence <a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Horizontal_and_vertical_alignment#Ordering_flex_items'>here.</a></p>
+            </section>
+        </main>
+      </div>
+      <!--contianer-main div-->
+    </div>
+    </div>
+    <!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script> -->
+    <script src='script.js'></script>
+  </body>
+
+  </html>
