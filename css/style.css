@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -11,7 +12,8 @@ header {
   font-weight: 700;
 }
 
-p code, li code {
+p code,
+li code {
   display: inline-block;
 }
 
@@ -43,7 +45,8 @@ a {
 }
 
 a:hover {
-  color: #d6e3ff;
+  color: #000000;
+  font-weight: bold;
 }
 
 /*side nav */
@@ -142,7 +145,7 @@ img {
   }
 }
 
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   #side-menu {
     z-index: 1;
     position: fixed;
@@ -154,7 +157,7 @@ img {
     overflow-x: hidden;
     height: 100vh;
     background-color: #ebeef4;
-    transition: .5s;
+    transition: 0.3s;
   }
 
   #container-main {
@@ -169,7 +172,7 @@ img {
   }
 }
 
-@media(min-width: 850px) {
+@media (min-width: 850px) {
   .open-slide {
     display: none;
   }
