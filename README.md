@@ -1,7 +1,1 @@
-<<<<<<< HEAD
-#this is my first time
-used flexbox documentation project as first commit to github
-=======
-#this is my first git to github commit:
-used flexbox documentation project as first commit to github. Guided by Traversy Media youtube tuts
->>>>>>> f4b575e7d2d014542703f442468c9eb92b4d6e41
+This is a flexbox technical documentation page created as a Responsive Web Design for Freecodecamp.org. The layout is mainly created with Flexbox, a little JS for side menu and media query for different screen sizes. All information here are from MDN.
