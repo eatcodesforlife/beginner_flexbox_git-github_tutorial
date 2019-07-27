@@ -157,12 +157,11 @@ img {
     overflow-x: hidden;
     height: 100vh;
     background-color: #ebeef4;
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   #container-main {
     margin-left: 10px;
-    /* transition: margin-left .5s; */
   }
 
   #side-menu .btn {
